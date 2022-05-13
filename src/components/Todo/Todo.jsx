@@ -50,7 +50,6 @@ export const Todo = ({todo}) => {
 
       <form onSubmit={handleUpdate} className="mr-auto">
         <input
-          required
           disabled={isReadOnly}
           ref={focusRef}
           onChange={evt => setLabel(evt.target.value)}
