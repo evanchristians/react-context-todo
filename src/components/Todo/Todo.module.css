@@ -1,0 +1,19 @@
+.container {
+  @apply bg-slate-100 border border-slate-300 rounded px-2 py-1.5 text-slate-900 flex gap-2 items-center transition-colors;
+}
+
+.container.completed {
+  @apply bg-green-200 border-green-400 text-green-900;
+}
+
+.label-or-input {
+  @apply focus:outline-none focus:bg-slate-200 rounded px-2 py-1.5 transition-colors bg-transparent;
+}
+
+.mark-as-completed {
+  @apply focus:outline-none rounded-full bg-transparent border-2 border-slate-400 text-transparent p-0.5 transition-colors;
+}
+
+.mark-as-completed.completed {
+  @apply bg-green-400 text-white border-green-400;
+}
